@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Balance</title>
+    <link rel="stylesheet" type="text/css" href="bankStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">    
+</head>
+<style type="text/css">
+    .position {
+        position: absolute;
+        width: 25vw;
+    }
+
+    .position > h1 {
+       color: #1C2833;
+       font-family: 'Karla', sans-serif;
+       margin-bottom: 0;
+       margin-left: 82px;
+    }
+
+    .position > p {
+       color: #1C2833;
+       font-family: 'Karla', sans-serif;
+       margin-top: 5px;
+       margin-left: 100px;
+       font-weight: 900;
+       font-size: 21px;
+    } 
+</style>
+<body>
+<div class="main-div">
+    <div class="first-div">
+        <h1 style="margin-top: 15px; color: #1C2833; font-family: 'Karla', sans-serif; text-align: center;">Check balance</h1>
+    <form id="myForm" name="accountData">
+        <label>A/C Number : </label>
+        <input type="number" id="accountNumber" placeholder="Enter account number"><br>
+        <span id="checkaccountNumber" style="color: red;"></span><br>
+
+        <label>Pin : </label>
+        <input type="number" id="pin" placeholder="Enter your pin"><br>
+        <span id="checkpin" style="color: red;"></span><br>
+
+        <button type="button" onclick="accountHolder.checkBalance()">Check balance</button>
+        <a href="homePage.html">Back</a>
+    </form>
+    <div class="position">
+        <h1>Balance :</h1>
+        <p id="balance"></p>
+    </div>
+</div>
+</div>
+    <script src="BankManagement.js"></script>
+
+</body>
+
+</html>

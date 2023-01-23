@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Pin</title>
+    <link rel="stylesheet" type="text/css" href="bankStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">    
+</head>
+
+<body>
+
+<div class="main-div">
+    <div class="first-div">
+    <form id="myForm" name="accountData">
+        <h1 style="margin-top: 15px; color: #1C2833; font-family: 'Karla', sans-serif; text-align: center;">Change pin</h1>
+        <label>A/C Number : </label>
+        <input type="number" id="accountNumber" placeholder="Enter account number"><br>
+        <span id="checkaccountNumber" style="color: red;"></span><br>
+
+        <label>Pin : </label>
+        <input type="number" id="pin" placeholder="Enter current pin"><br>
+        <span id="checkpin" style="color: red;"></span><br>
+
+        <label>New Pin : </label>
+        <input type="number" id="newpin" placeholder="Enter new pin"><br>
+        <span id="checknewpin" style="color: red;"></span><br>
+
+        <label>Confirm Pin : </label>
+        <input type="number" id="confirmpin" placeholder="Enter confirm pin"><br>
+        <span id="checkconfirmpin" style="color: red;"></span><br>
+
+        <button type="button" onclick="accountHolder.changePin()">Change pin</button>
+        <a href="homePage.html">Back</a>
+    </form>
+</div>
+</div>
+
+    <script src="BankManagement.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+    body{
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+    }
+
+    .main-div {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .first-div {
+        width: 25vw;
+        position: absolute;   
+        left: 39%;
+        border-radius: 19px;
+        padding: 10px;
+        margin-top: 100px;
+        box-shadow: 1px 1px 10px 3px gray;
+    }
+
+    #myForm > label {
+    	margin-left: 74px;
+        font-family: 'Karla', sans-serif;
+        font-size: 20px;
+        color: #1C2833;
+    }
+
+    #myForm > input {
+    	margin: 4px 0px 5px 63px;
+	    padding: 8px;
+	    border: 1px solid #555;
+	    outline: none;
+	    border-radius: 14px;
+    }
+
+    #myForm > input:focus {
+    	border: 1px solid #17202A;
+    }
+
+    #myForm > span {
+    	margin-left: 74px;
+    }
+
+    #myForm > button {
+    	padding: 9px;
+        border-radius: 19px;
+        background-color: #1C2833;
+        color: #FBFCFC;
+        width: 134px;
+        border: none;
+        margin-bottom: 10px;
+        margin-left: 40px;
+    }
+
+    #myForm > button:hover{
+    	background-color: #FBFCFC;
+    	color:#1C2833;
+        border: 1px solid #1C2833; 
+    }
+
+    #myForm > a {
+    padding: 8px 30px 9px 30px;
+    border-radius: 19px;
+    background-color: #1C2833;
+    color: #FBFCFC;
+    text-decoration : none;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    }
+
+
+    #myForm > a:hover {
+    background-color: #FBFCFC;
+    color: #1C2833;    
+    border: 1px solid #1C2833;	
+    }

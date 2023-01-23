@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer money</title>
+    <link rel="stylesheet" type="text/css" href="bankStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">    
+</head>
+
+<body>
+ <div class="main-div">
+    <div class="first-div">
+        <h1 style="margin-top: 15px; color: #1C2833; font-family: 'Karla', sans-serif; text-align: center;">Transfer money</h1>
+    <form id="myForm" name="accountData">
+        <label>A/C Number : </label>
+        <input type="number" id="accountNumber" placeholder="Enter account number"><br>
+        <span id="checkaccountNumber" style="color: red;"></span><br>
+
+        <label>Pin : </label>
+        <input type="number" id="pin" placeholder="Enter your pin"><br>
+        <span id="checkpin" style="color: red;"></span><br>
+
+        <label>Other A/C Number : </label>
+        <input type="number" id="OtheraccountNumber" placeholder="Enter account number"><br>
+        <span id="checkOtheraccountNumber" style="color: red;"></span><br>
+
+        <label>Amount</label>
+        <input type="text" id="amount" placeholder="Enter amount"><br>
+        <span id="checkamount" style="color: red;"></span><br>
+
+        <button type="button" onclick="accountHolder.transfer()">Transfer money</button>
+        <a href="homePage.html">Back</a>
+    </form>
+</div>
+</div>
+
+    <script src="BankManagement.js"></script>
+
+</body>
+
+</html>
